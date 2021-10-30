@@ -1,0 +1,113 @@
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+#page-auth {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 5;
+    background: var(--gray);
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+    .content {
+      .title {
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: rem(497px);
+      }
+      .text {
+        margin-top: 1rem;
+        max-width: rem(333px);
+
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+  .container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--goodwhite);
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      justify-content: center;
+      .logoYe {
+        width: rem(153px);
+        height: rem(202px);
+        align-self: center;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        padding: 13px;
+        width: rem(320px);
+        height: rem(50px);
+        border-radius: rem(8px);
+        border: 0;
+        color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: brightness(0.9);
+          transform: scale(1.01);
+        }
+      }
+
+      .google {
+        background: var(--redgooglebutton);
+      }
+
+      .division {
+        font-size: rem(14px);
+        color: #a8a8b3;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: #a8a8b3;
+          margin-right: 1rem;
+        }
+
+        &::after {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: #a8a8b3;
+          margin-left: 1rem;
+        }
+      }
+
+      .consult {
+        background: var(--gray);
+      }
+    }
+  }
+}

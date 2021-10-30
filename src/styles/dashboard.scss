@@ -1,0 +1,28 @@
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+main {
+    background: var(--gray);
+    height: 100vh;
+  .cabecalho{
+      padding: 2rem 4rem;
+      color: var(--goodwhite);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .user-avatar {
+    width: rem(120px);
+    height: rem(120px);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
